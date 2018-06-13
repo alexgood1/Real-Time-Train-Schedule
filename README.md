@@ -8,4 +8,4 @@ Displays in real-time current running trains arriving and departing from a train
 # Technologies-Used
 HTML5, CSS, JavaScript, jQuery, Moment.js, Firebase
 
-![](images/train-schedule-img.jpeg)
+
