@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="wrapper inner-border" style="background-image: url(assets/images/hero.png)">
+            <h1 class="text-center">Train Schedule</h1>
+            <h3 class="text-center">Up-To-The-Minute: Arrivals + Departures</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Current Trains -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Live Train Schedule</strong>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-hover" id="train-table">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <!-- Add Train -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            <strong>Add Train</strong>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <!-- Entry Form -->
+                        <form>
+                            <div class="form-group row">
+                                <label for="train-name">Train Name</label>
+                                <input class="form-control" id="train-name" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="destination-input">Destination</label>
+                                <input class="form-control" id="destination-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="start-input">Start Time</label>
+                                <input class="form-control" id="start-input" step="60" type="time">
+                            </div>
+                            <div class="form-group row">
+                                <label for="tFrequeny">Frequency (min)</label>
+                                <input class="form-control" id="tFrequency" type="number">
+                            </div>
+                            <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery, Popper.js, Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- Link my javasript -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

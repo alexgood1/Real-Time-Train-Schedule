@@ -1,0 +1,41 @@
+/* rgb(64, 64, 64); color: rgb(98, 171, 255)" */
+.wrapper {
+    /* box-shadow: outset 0px 8px 2px 0px black; */
+    background-image: url(../assets/images/hero.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 240px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(35, 35, 35);
+    padding: 20px;
+    margin: 15px;
+}
+
+.inner-border {
+    border: 6px solid rgba(0, 0, 0, 0);
+    box-shadow: inset 0px 0px 0px 6px rgb(252, 252, 252);
+    box-sizing: border-box; /* padding and border in element's width and height */
+}
+
+.inner-outline {
+    outline: 3px solid rgb(198, 166, 3);
+    outline-offset: -30px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #c39f33;
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(231, 126, 35);
+}
+
+.panel-primary {
+    padding: 10px;
+    margin: 14px;
+}
